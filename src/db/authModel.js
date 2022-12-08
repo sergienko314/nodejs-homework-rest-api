@@ -6,6 +6,7 @@ const authShema = mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   createdAt: { type: Date, default: Date.now() },
+  confirmed: { type: Boolean, default: false },
   avatar: {
     type: String,
     default: function () {
