@@ -58,7 +58,7 @@ const registrationConfirmationUser = async (code) => {
     from: process.env.MASTER_EMAIL,
     subject: "Thenk you for registration, Good Day!)",
     text: "and easy to do anywhere, even with Node.js",
-    html: `<h1>Please,confirme your email address POST http://localhost:8082/api/auth/registration_confirmation/:${code}</h1>`,
+    html: `<h1>Congratulations, Bee Happy</h1>`,
   };
   await sgMail.send(msg);
 };
